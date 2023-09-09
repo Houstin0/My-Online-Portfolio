@@ -1,3 +1,49 @@
-h1{
-    color: blue;
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgoldenrod;
+}
+#logo {
+    padding: 10px;
+    color: black;
+}
+#nav-bar{
+    margin-top: 22px;
+    padding: 10px;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 5px;
+}
+#nav-bar a:hover {
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.project {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    color: black;
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color:darkgoldenrod;
+    color: black;
 }
