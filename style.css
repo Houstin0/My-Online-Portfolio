@@ -10,6 +10,7 @@ h2{
     display: flex;
     justify-content: space-between;
     background-color: darkgoldenrod;
+    border-radius: 10px;
 }
 #logo {
     padding-left: 10px;
@@ -28,7 +29,19 @@ h2{
 #nav-bar a:hover {
     color: white;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 25px;
+}
+#about{
+    display: flex;
+    margin-top: 20px;
+    
+}
+#about img{
+    max-width: 500px;
+    border-radius: 20px;
+}
+#aboutMe{
+    padding: 30px;
 }
 .project {
     border: 1px solid #ddd;
