@@ -2,22 +2,32 @@ body {
     background-color: black;
     font-family: Arial, sans-serif;
     color: white;
+    margin: 20px;
+    padding-top: 50px;
 }
 h2{
     text-align: center;
 }
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Vertically align items */
     background-color: darkgoldenrod;
     border-radius: 10px;
+    z-index: 1000;
+    height: 55px; /* Adjust the height as desired */
+    padding: 0 20px; /* Add padding if needed */
+    margin-top: 10px;
 }
 #logo {
     padding-left: 10px;
     color: black;
 }
 #nav-bar{
-    margin-top: 22px;
     padding-right: 10px;
 }
 #nav-bar a {
