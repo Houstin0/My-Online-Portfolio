@@ -1,74 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE-edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Houstin's Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-</head>
-<body>
-    <div id="header">
-        <div id="logo">
-            <h1>Houstin Angwenyi</h1>
-        </div>
-        <nav id="nav-bar">
-            <!-- <a href="#resume">Resume</a> -->
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contacts">Contact Me</a>
 
-        </nav>
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css"  />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> Houstin </a>
+      <nav class="nav-bar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Houstin Angwenyi</h1>
+        <p>
+          A Fullstack web developer captivated by the ever-evolving world of
+          technology and dedicated to transforming concepts into digital
+          realities.Specializing in Fullstack Web Development, I possess a
+          strong foundation in front-end languages: HTML, JavaScript,React,Vite
+          and styling with CSS, Bootstrap and Tailwind. and back-end languages :
+          Python,Flask,Fastapi,Django,SQLAlchemy,PostgreSQL
+        </p>
+
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <!-- <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>   -->
+        </div>
+
+        <a href="#" class="btn">Download Resume</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developer</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-palette"></i>
+            <h3>Web Designer</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bx-camera"></i>
+            <h3>Photographer</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bxs-pen"></i>
+            <h3>Tattoo Artist</h3>
+          </div>
+
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div class="home-img">
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, I'm Here To Help Your Next Project!</h3>
+        <p>
+          My passion lies in crafting visually appealing user interfaces that
+          not only optimize performance but also solve real-world problems. I am
+          fueled by a commitment to clean code, delivering outstanding user
+          experiences, keeping up with industry trends, and a perpetual hunger
+          for expanding my knowledge. I am actively pursuing opportunities to
+          apply my knowledge and contribute to cutting-edge projects, feelfree
+          to ask for collaborations
+        </p>
+
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            asperiores, veniam explicabo voluptates quas tenetur, minus
+            similique blanditiis dicta nihil repudiandae optio.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-palette"></i>
+          <h3>Web Designer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            asperiores, veniam explicabo voluptates quas tenetur, minus
+            similique blanditiis dicta nihil repudiandae optio.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-camera"></i>
+          <h3>Photographer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            asperiores, veniam explicabo voluptates quas tenetur, minus
+            similique blanditiis dicta nihil repudiandae optio.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Link Loop</h4>
+            <p>
+              Link loop is a web application designed to connect users to other
+              users. It aims to provide a platform where users can
+              connect,message,share moments, and explore a world of visual
+              stories.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Recipe Manager and Meal Planner CLI</h4>
+            <p>
+              Recipe Manager and Meal Planner CLI is a command-line application
+              designed to help you organize your recipes and plan for meals.
+              With this tool, you can store, categorize, search for recipes,
+              plan meals, and even generate shopping lists based on your meal
+              plans. Whether you're a culinary enthusiast or just trying to
+              simplify your meal planning, this CLI app has you covered.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, magnam repudiandae!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, magnam repudiandae!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, magnam repudiandae!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="image/port1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, magnam repudiandae!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+
+    <div class="testimonial-container">
+      <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial-box mySwiper">
+          <div class="testimonial-content swiper-wrapper">
+            <div class="testimonial-slide swiper-slide">
+              <img src="image/my-picture.png" alt="" />
+              <h3>Houstin Angwenyi</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur exercitationem amet quam perspiciatis animi
+                temporibus suscipit accusantium, saepe illo accusamus maxime cum
+                deserunt modi ducimus voluptate magni, iure expedita
+                perferendis!
+              </p>
+            </div>
+            <div class="testimonial-slide swiper-slide">
+              <img src="image/my-picture.png" alt="" />
+              <h3>Angwenyi</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur exercitationem amet quam perspiciatis animi
+                temporibus suscipit accusantium, saepe illo accusamus maxime cum
+                deserunt modi ducimus voluptate magni, iure expedita
+                perferendis!
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
-    
-        <div id="about">
-            <div>
-                <img src="./image/my-picture.png">
-            </div>
-            <div id="aboutMe">
-                <h2>About Me</h2>
-                <p> Greetings! I'm Houstin Angwenyi, A Fullstack web developer captivated by the ever-evolving world of technology 
-                    and dedicated to transforming concepts into digital realities.Specializing in Fullstack Web Development, I possess a strong foundation in
-                     front-end languages: HTML, JavaScript,React,Vite and styling with CSS, Bootstrap and Tailwind.
-                    and back-end languages : Python,Flask,Fastapi,Django,SQLAlchemy,PostgreSQL</p>
-                <p>My passion lies in crafting visually appealing user interfaces that not only optimize performance
-                     but also solve real-world problems. I am fueled by a commitment to clean code, delivering outstanding user experiences, 
-                    keeping up with industry trends, and a perpetual hunger for expanding my knowledge.
-                    I am actively pursuing opportunities to apply my knowledge and contribute to cutting-edge projects, feelfree to ask for collaborations</p>    
-                <p> Feel free to explore my portfolio to witness the manifestation of my work! Let's embark on the journey of creating something truly amazing together.</p>     
-            </div>
-           
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
         </div>
-        <div id="resume">
-            <h2>My Resume</h2>
-            <p>View or download my resume click this link: <a href="./image/my resume 1.pdf" target="_blank">Resume.pdf</a></p>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
         </div>
-        
-        <div id="portfolio">
-            <h2>My Portfolio</h2>
-        <div class="project">
-            <img src="" alt="Project 1">
-            <h3>Link Loop</h3>
-            <p>Link loop is a web application designed to connect users to other users.
-                It aims to provide a platform where users can connect,message,share moments, 
-                and explore a world of visual stories.</p>
-        </div>
-        <div class="project">
-            <img src="" alt="Project 2">
-            <h3>Recipe Manager and Meal Planner CLI</h3>
-            <p>Recipe Manager and Meal Planner CLI is a command-line application designed to help you organize your recipes and plan for meals. 
-                With this tool, you can store, categorize, search for recipes, plan meals, and even generate shopping lists based on your meal plans. 
-                Whether you're a culinary enthusiast or just trying to simplify your meal planning, this CLI app has you covered.</p>
-        </div>
-        </div>
-        <div id="contacts">
-            <h2>Contact Me</h2>
-            <div id="social-links">
-                <a href=""></a>
-            </div>
-        </div>
-    
-    <footer>
-        <p>Thank you for stopping by, and I look forward to connecting with you.</p>
-        <p>&copy; 2023 Houstin Angwenyi</p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Houstin Angwenyi | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
-</body>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
 </html>
