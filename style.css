@@ -264,7 +264,7 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 28vw;
   pointer-events: none;
 }
 
@@ -277,8 +277,8 @@ span {
   align-items: center;
   gap: 4rem;
 }
-.about-img {
-  width: 40vw;
+.about-img img {
+  width: 20vw;
 }
 
 .heading {
