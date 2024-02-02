@@ -365,7 +365,7 @@ span {
 }
 .portfolio-box img {
   width: 100%;
-  height: auto;
+  height: 25rem;
   transition: 0.5s ease;
 }
 .portfolio-box:hover img {
