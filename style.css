@@ -11,7 +11,7 @@
 
 :root {
   --bg-color: #fdfdfd;
-  --text-color: #333;
+  --text-color: black;
   --main-color: #754ef9;
   --white-color: white;
   --shadow-color: rgba(0, 0, 0, 0.2);
@@ -399,7 +399,7 @@ span {
   color: black;
 }
 .projects-layer p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0.3rem 0 1rem;
   color: var(--white-color);
 }
@@ -493,39 +493,45 @@ span {
 .contact h2 {
   margin-bottom: 3rem;
 }
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
   text-align: center;
-  margin-bottom: 3rem;
-}
-.contact .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.contact form .input-box input,
-.contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--bg-color);
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
-  box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
-}
-.contact form .input-box input {
-  width: 49%;
-}
-.contact form textarea {
-  resize: none;
-}
-.contact form .btn {
-  margin-top: 2rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Add some space between buttons */
 }
 
+.email-button {
+  background-color: #007BFF; /* Bootstrap primary color for email */
+}
+
+.email-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.whatsapp-button {
+  background-color: #25D366; /* WhatsApp green color */
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851; /* Darker shade for hover effect */
+}
+
+.linkedin-button {
+  background-color: #0077B5; /* LinkedIn blue color */
+}
+
+.linkedin-button:hover {
+  background-color: #005582; /* Darker shade for hover effect */
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -555,6 +561,59 @@ span {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: #333;
+}
+.web-dev-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/programmer.png');
+  background-size: cover;
+}.software-dev-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/developer.png');
+  background-size: cover;
+}.front-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/ui-design.png');
+  background-size: cover;
+}.back-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/cloud-database.png');
+  background-size: cover;
+}
+.Company-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/website.png');
+  background-size: cover;
+}
+.custom-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/app-development.png');
+  background-size: cover;
+}
+.Portfolio-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/account.png');
+  background-size: cover;
+}
+.E-commerce-icon {
+  display: inline-block;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  background-image: url('image/icons/online-shopping.png');
+  background-size: cover;
 }
 
 /* BREAKPOINTS */
