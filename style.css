@@ -13,7 +13,7 @@
   --bg-color: #fdfdfd;
   --text-color: #333;
   --main-color: #754ef9;
-  --white-color: #fdfdfd;
+  --white-color: white;
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -346,6 +346,7 @@ span {
   margin: 1rem 0 3rem;
 }
 
+
 .projects {
   padding-bottom: 10rem;
 }
@@ -395,24 +396,37 @@ span {
 }
 .projects-layer h4 {
   font-size: 3rem;
+  color: black;
 }
 .projects-layer p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 0.3rem 0 1rem;
+  color: var(--white-color);
 }
 .projects-layer a {
-  display: inline-flex;
+  display: flex; /* Change to flex */
   justify-content: center;
   align-items: center;
-  width: 5rem;
+  width: auto; /* Set width to auto */
   height: 5rem;
-  background: var(--white-color);
-  border-radius: 50%;
+  background: var(--main-color);
+  border-radius: 10px; /* Set border-radius to 0 for rectangular shape */
+  padding: 0.5rem 1rem; /* Add padding */
+  
 }
+
 .projects-layer a i {
   font-size: 2rem;
-  color: #333;
+  color: white;
+  margin-right: 0.5rem; /* Add margin for spacing between icon and text */
 }
+
+.projects-layer a span {
+  font-size: 1.6rem;
+  color: white;
+}
+
+
 .testimonial-container {
   display: flex;
   align-items: center;
