@@ -283,9 +283,22 @@ span {
   width: 20vw;
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 .heading {
   font-size: 4.5rem;
   text-align: center;
+  animation: bounce 1s infinite;
 }
 
 .about-content h2 {
@@ -490,12 +503,23 @@ span {
   background: var(--main-color);
 }
 
-.contact h2 {
-  margin-bottom: 3rem;
+
+/* Style for contact section */
+.contact {
+  text-align: center;
+  padding: 50px 0;
 }
 
+.contact .heading {
+  margin-bottom: 30px;
+}
 
-.button {
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.contact .button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -507,6 +531,10 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 10px; /* Add some space between buttons */
+}
+
+.contact .button:hover {
+  background-color: #0056b3;
 }
 
 .email-button {
@@ -532,6 +560,8 @@ span {
 .linkedin-button:hover {
   background-color: #005582; /* Darker shade for hover effect */
 }
+
+
 .footer {
   display: flex;
   justify-content: space-between;
