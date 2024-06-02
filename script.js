@@ -88,4 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
   // ScrollReveal().reveal('.home-img img , .services-container, .portfolio-box, .testimonial-wrapper, .contact form ', { origin: 'bottom' });
+
+
+  
 });
